@@ -1,0 +1,11 @@
+{
+	"search": "",
+	"searchFields": "job_title, job_duties, soc_code_id, soc_title, case_number, worksite_city, worksite_state, employer_business_name, employer_trade_name",
+	"filter": "active eq true and display eq true",
+	"orderby": "search.score() desc",
+	"top": 10,
+	"skip": 20,
+	"select": "active,case_number,job_title,begin_date,end_date,basic_rate_from,basic_rate_to,pay_range_desc,employer_trade_name,employer_business_name,worksite_city,worksite_state",
+	"count":true,
+	"facets":["job_title, count:4, sort:count"]
+}
